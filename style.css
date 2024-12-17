@@ -40,6 +40,10 @@ body {
 
 .note-wrapper {
   position: relative; /* Required for absolute positioning */
+  background-color: rgba(#875654, #674664, #774645, 0.5);
+  margin: 5px;
+  border-radius: 20px;
+  border: 0.4px solid rgba(0, 0, 0, 0.5);
 }
 
 .input-box {

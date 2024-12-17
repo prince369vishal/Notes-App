@@ -2,7 +2,7 @@ const notesContainer = document.querySelector(".notes-container");
 const createBtn = document.querySelector(".btn");
 
 // Array of background colors for notes
-const noteColors = ["#FFEBEE", "#E3F2FD", "#E8F5E9", "#FFFDE7", "#F3E5F5", "#E0F7FA"];
+const noteColors = ["#FFEBEE", "#E3F2FD", "#E8F5E9", "#FFFDE7", "#F3E5F5", "#E0F7CC"];
 let colorIndex = 0; // To track the current color index
 
 // Function to load notes from local storage
