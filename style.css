@@ -1,69 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.container{
+body {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleImage1,
+.titleImage2 {
+  width: 100px;
+}
+.titleImage1 {
+  margin-left: 20px;
+}
+
+.container {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #cf9aff, #95c0ff);
+  height: 90vh;
   color: #fff;
-  padding-top: 4%;
-  padding-left: 10%;
+  padding: 20px 50px;
+}
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.container h1{
+.note-wrapper {
+  position: relative; /* Required for absolute positioning */
+}
+
+.input-box {
+  width: 400px;
+  height: 250px;
+  background-color: rgba(245, 245, 245, 0.5);
+  color: #333;
+  padding: 20px;
+  margin: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute; /* Positioning it absolutely */
+  bottom: 20px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */
+}
+.btn {
   display: flex;
   align-items: center;
-  font-size: 35px;
-  font-weight: 600;
-
-}
-
-.container h1 img{
-  width: 60px;
-}
-
-.container button img{
-  width: 25px;
-  margin-right: 8px;
-}
-
-.container button{
-  display: flex;
-  align-items: center;
-  background: linear-gradient(#9418fd, #571094);
-  color: #fff;
+  background: #5fd6d2;
+  color: #000;
   font-size: 16px;
   outline: 0;
   border: 0;
   border-radius: 40px;
-  padding: 15px 25px;
-  margin: 30px 0 20px;
+  padding: 15px 30px;
+  margin-right: 50px;
   cursor: pointer;
 }
-.input-box{
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  min-height: 150px;
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  margin: 20px 0;
-  outline: none;
-  border-radius: 5px;
 
-}
-
-.input-box img{
-  width: 25px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  cursor: pointer;
+.btn img {
+  width: 20px;
+  margin-right: 8px;
 }

@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes App</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1> <img src="images 4/notes.png" alt=""> Notes</h1>
-    <button class="btn"><img src="images 4/edit.png" alt=""> Create Notes</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <img class="titleImage1" src="images/icon.gif" alt="" />
+          <img class="titleImage2" src="images/notes.png" alt="" />
+        </div>
+        <button class="btn"><img src="images/edit.png" />Create Notes</button>
+      </div>
 
-    <div class="notes-container">
-      <!-- <p contenteditable="true" class="input-box">
-        <img src="images 4/delete.png" alt="">
-      </p> -->
+      <div class="notes-container">
+        <div class="note-wrapper">
+          <p class="input-box" contenteditable="true"></p>
+          <img src="images/delete.png" class="delete-btn" />
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
